@@ -49,7 +49,7 @@ author:
 footer:
         links:
                 - label: "GPG Key"
-                  icon: "fab fa-fw fa-key"
+                  icon: "fas fa-key"
                   url: "https://avaldes.co/alevalv.asc"
                 - label: "GitHub"
                   icon: "fab fa-fw fa-github"
