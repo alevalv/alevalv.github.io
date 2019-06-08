@@ -19,14 +19,46 @@ email: blog@avaldes.co
 description: >- # this means to ignore newlines until "baseurl:"
   Stories and adventures in software development of myself.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "avaldes.co" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://avaldes.co" # the base hostname & protocol for your site, e.g. http://example.com
 name: Alejandro Valdés
 tagline: Software Developer
-date_format: "%b %-d, %Y"
-social_links:
+repository: "alevalv/alevalv.github.io"
+breadcrumbs: true
+
    github: alevalv
    linkedIn: alevalv
 remote_theme: "mmistakes/minimal-mistakes@4.16.4"
+minimal_mistakes_skin: "sunrise"
+defaults:
+   - scope:
+           path: ""
+           type: posts
+           values:
+                   read_time: true
+                   
+author:
+        name: "Alejandro Valdés"
+        bio: "Software Developer"
+        location : "Colombia"
+        type: Person
+        links:
+                - label: "GitHub"
+                  icon: "fab fa-fw fa-github"
+                  url: "https://www.linkedin.com/in/alevalv"
+                - label: "LinkedIn"
+                  icon: "fab fa-fw fa-linkedin"
+                  url: "https://github.com/alevalv"
+
+footer:
+         links:
+                - label: "GitHub"
+                  icon: "fab fa-fw fa-github"
+                  url: "https://www.linkedin.com/in/alevalv"
+                - label: "LinkedIn"
+                  icon: "fab fa-fw fa-linkedin"
+                  url: "https://github.com/alevalv"
+
+       
 
 # Build settings
 markdown: kramdown 
