@@ -35,16 +35,17 @@ defaults:
                    
 author:
         name: "Alejandro Valdés"
-        bio: "Software Developer"
+        bio: "Yet Another Software Developer Blog"
+        avatar: "/assets/images/bio-photo.jpg"
         location : "Colombia"
         type: Person
         links:
                 - label: "GitHub"
                   icon: "fab fa-fw fa-github"
-                  url: "https://www.linkedin.com/in/alevalv"
+                  url: "https://github.com/alevalv"
                 - label: "LinkedIn"
                   icon: "fab fa-fw fa-linkedin"
-                  url: "https://github.com/alevalv"
+                  url: "https://www.linkedin.com/in/alevalv"
 
 footer:
         links:
