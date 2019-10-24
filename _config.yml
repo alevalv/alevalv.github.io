@@ -1,69 +1,129 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
 title: Alejandro's Blog
 email: blog@avaldes.co
 description: >- # this means to ignore newlines until "baseurl:"
-  Stories and adventures in software development of myself.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://avaldes.co" # the base hostname & protocol for your site, e.g. http://example.com
+  Stories and adventures in software development.
+baseurl: ""
+url: "https://avaldes.co"
 name: Alejandro Valdés
 tagline: Software Developer
 repository: "alevalv/alevalv.github.io"
 breadcrumbs: true
 remote_theme: "mmistakes/minimal-mistakes@4.17.1"
 minimal_mistakes_skin: "aqua"
+words_per_minute: 180
 defaults:
-   - scope:
-           path: ""
-           type: posts
-           values:
-                   read_time: true
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
 author:
-        name: "Alejandro Valdés"
-        bio: "Yet Another Software Developer Blog"
-        avatar: "/assets/images/bio-photo.jpg"
-        location : "Colombia"
-        type: Person
-        links:
-                - label: "GitHub"
-                  icon: "fab fa-fw fa-github"
-                  url: "https://github.com/alevalv"
-                - label: "LinkedIn"
-                  icon: "fab fa-fw fa-linkedin"
-                  url: "https://www.linkedin.com/in/alevalv"
+  name: "Alejandro Valdés"
+  bio: "Yet Another Software Developer Blog"
+  avatar: "/assets/images/bio-photo.jpg"
+  location : "Colombia"
+  type: Person
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/alevalv"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/alevalv"
 
 footer:
-        links:
-                - label: "GPG Key"
-                  icon: "fas fa-key"
-                  url: "https://avaldes.co/alevalv.asc"
-                - label: "GitHub"
-                  icon: "fab fa-fw fa-github"
-                  url: "https://github.com/alevalv"
-                - label: "LinkedIn"
-                  icon: "fab fa-fw fa-linkedin"
-                  url: "https://www.linkedin.com/in/alevalv"
+  links:
+    - label: "GPG Key"
+      icon: "fas fa-key"
+      url: "https://avaldes.co/alevalv.asc"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/alevalv"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/alevalv"
 
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
 
+# Liquid
+strict_front_matter: true
+liquid:
+  error_mode: strict
 
-# Build settings
+# Conversion
 markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+paginate: 10
+paginate_path: /recent/page:num/
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
 
