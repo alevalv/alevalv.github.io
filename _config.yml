@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Alejandro's Blog 
+title: Alejandro's Blog
 email: blog@avaldes.co
 description: >- # this means to ignore newlines until "baseurl:"
   Stories and adventures in software development of myself.
@@ -24,15 +24,15 @@ name: Alejandro Valdés
 tagline: Software Developer
 repository: "alevalv/alevalv.github.io"
 breadcrumbs: true
-remote_theme: "mmistakes/minimal-mistakes@4.16.4"
-minimal_mistakes_skin: "sunrise"
+remote_theme: "mmistakes/minimal-mistakes@4.17.1"
+minimal_mistakes_skin: "aqua"
 defaults:
    - scope:
            path: ""
            type: posts
            values:
                    read_time: true
-                   
+
 author:
         name: "Alejandro Valdés"
         bio: "Yet Another Software Developer Blog"
@@ -59,10 +59,10 @@ footer:
                   icon: "fab fa-fw fa-linkedin"
                   url: "https://www.linkedin.com/in/alevalv"
 
-       
+
 
 # Build settings
-markdown: kramdown 
+markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-include-cache
