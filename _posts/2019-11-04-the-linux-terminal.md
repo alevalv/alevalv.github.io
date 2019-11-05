@@ -20,7 +20,7 @@ I have been using Linux for 10+ years, with zsh as shell for about 5 years. This
 ## My terminal
 
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true">
+  <video controls="true" allowfullscreen="true" width="100%">
     <source src="/assets/terminal-demo/terminal-example1.webm" type="video/webm">
   </video>
 </figure>
@@ -74,7 +74,7 @@ bindkey '^[[B' history-substring-search-down
 These commands allow the console to autocomplete commands while you are writing them, and also does a search if you press the up/down arrows (similar to `Ctrl+R`):
 
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true">
+  <video controls="true" allowfullscreen="true" width="100%">
     <source src="/assets/terminal-demo/terminal-example2.webm" type="video/webm">
   </video>
 </figure>
