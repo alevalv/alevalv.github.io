@@ -8,28 +8,7 @@ name: Alejandro Valdés
 tagline: Software Developer
 repository: "alevalv/alevalv.github.io"
 breadcrumbs: true
-remote_theme: "mmistakes/minimal-mistakes@4.17.1"
-minimal_mistakes_skin: "aqua"
-words_per_minute: 180
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-
+remote_theme: "fongandrew/hydeout"
 author:
   name: "Alejandro Valdés"
   bio: "Yet Another Software Developer Blog"
@@ -99,8 +78,7 @@ lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-paginate: 10
-paginate_path: /recent/page:num/
+paginate: 5
 
 # Markdown Processing
 kramdown:
