@@ -86,7 +86,7 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 antigen apply
 ```
 
-The first two lines sets the prompt theme, (powerlevel10)[https://github.com/romkatv/powerlevel10k], and set it up to move the prompt to the next line. `antigen apply` executes and saves all antigen commands.
+The first two lines sets the prompt theme, [powerlevel10](https://github.com/romkatv/powerlevel10k), and set it up to move the prompt to the next line. `antigen apply` executes and saves all antigen commands.
 
 ```sh
 #fzf config
