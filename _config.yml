@@ -67,9 +67,9 @@ keep_files:
   - .svn
 
 # Liquid
-strict_front_matter: true
-liquid:
-  error_mode: strict
+#strict_front_matter: true
+#liquid:
+#  error_mode: strict
 
 # Conversion
 markdown: kramdown
