@@ -24,7 +24,7 @@ You need to start it before running the virtual machine, you can also leave enab
 Next, we'll verify that the libvirt installation is working, run this command:
 
 ```
-virsh -c qemu:///system
+$ virsh -c qemu:///system
 ```
 
 If this doesn't display a new command prompt, please refer to the [QEMU](https://wiki.archlinux.org/index.php/QEMU) and [libvirt](https://wiki.archlinux.org/index.php/Libvirt) wiki pages for more info, your user should have sudo rights (wheel group in my case).
