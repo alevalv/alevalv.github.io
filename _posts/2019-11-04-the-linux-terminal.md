@@ -1,6 +1,6 @@
 ---
 title: The Linux Terminal
-layout: page
+layout: post
 ---
 
 This post is about how I use the terminal in my personal and work machines, and how, with a few modifications, you can also change/improve your QoL when using it.

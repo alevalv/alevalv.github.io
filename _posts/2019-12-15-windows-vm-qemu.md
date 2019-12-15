@@ -1,6 +1,6 @@
 ---
 title: Windows 7 VM with QEMU
-layout: page
+layout: post
 ---
 
 This blog post explains how to install a Windows 7 VM using the existing [modern.ie](https://modern.ie) images provided by Microsoft free of charge. It's possible that next year this tutorial might not work, but you can achieve similar results with the Windows 8 or Windows 10 images. This was done on an ArchLinux machine, but it should work the same for other distributions.
